@@ -12,32 +12,35 @@ import com.oldratlee.io.api.Sender;
 public class Outputs {
     static class TextOutput implements Output<String, IOException> {
         final File destination;
-        
+        final Writer writer;
         final TextFileReceiver receiver;
 
         public TextOutput(File destination) throws IOException {
             this.destination = destination;
-            receiver = new TextFileReceiver(destination);
+            writer = new FileWriter(destination);
+            receiver = new TextFileReceiver(writer);
         }
 
-        @Override
         public <SenderThrowableType extends Throwable> void receiveFrom(Sender<String, SenderThrowableType> sender)
                 throws IOException, SenderThrowableType {
             sender.sendTo(receiver);
             receiver.close();
+            try {
+                writer.close();
+            } catch (Exception e) {
+                // ignore writer exception!
+            }
         }
-
     }
 
     static class TextFileReceiver implements
             Receiver<String, IOException> {
         final Writer writer;
 
-        public TextFileReceiver(File destination) throws IOException {
-            writer = new FileWriter(destination);
+        public TextFileReceiver(Writer writer) throws IOException {
+            this.writer = writer;
         }
 
-        @Override
         public void receive(String item) throws IOException {
             writer.write(item);
         }

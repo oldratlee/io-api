@@ -15,17 +15,24 @@ public class Inputs {
     
     static class TextInput implements Input<String, IOException> {
         final File source;
+        final BufferedReader reader;
         final TextSender sender; 
         
         public TextInput(File source) throws IOException {
             this.source = source;
-            sender = new TextSender(source);
+            reader = new BufferedReader(new FileReader(source));
+            sender = new TextSender(reader);
         }
         
-        @Override
         public <ReceiverThrowableType extends Throwable> void transferTo(Output<String, ReceiverThrowableType> output)
                 throws IOException, ReceiverThrowableType {
             output.receiveFrom(sender);
+            
+            try {
+                reader.close();
+            } catch (Exception e) {
+                // ignore close exception :)
+            }
         }
         
     }
@@ -33,11 +40,10 @@ public class Inputs {
     static class TextSender implements Sender<String, IOException> {
         final BufferedReader reader;
         
-        public TextSender(File source) throws FileNotFoundException {
-            this.reader = new BufferedReader(new FileReader(source));
+        public TextSender(BufferedReader reader) throws FileNotFoundException {
+            this.reader = reader;
         }
 
-        @Override
         public <ReceiverThrowableType extends Throwable> void sendTo(Receiver<String, ReceiverThrowableType> receiver)
                 throws ReceiverThrowableType, IOException {
             String readLine;
