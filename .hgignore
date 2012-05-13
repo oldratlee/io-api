@@ -1,0 +1,22 @@
+syntax: glob
+
+*.o
+*.lo
+*.la
+*.al
+.libs
+*.so
+*.a
+*.pyc
+*.pyo
+*.class
+.project
+.classpath
+.settings
+target
+.springBeans
+
+
+syntax: regexp
+
+.*\.so.[0-9]*
