@@ -31,13 +31,6 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>1.6.4</version>
-			<scope>compile</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.16</version>
@@ -81,16 +74,10 @@
 			<version>3.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>1.6.4</version>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 	<scm>
-		<url>https://bitbucket.org/oldrat/cooma</url>
-		<connection>scm:hg:https://bitbucket.org/oldrat/cooma</connection>
+		<url>https://bitbucket.org/oldrat/io-api</url>
+		<connection>scm:hg:https://oldrat@bitbucket.org/oldrat/io-api</connection>
 	</scm>
 	<build>
 		<plugins>
