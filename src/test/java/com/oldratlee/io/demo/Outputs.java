@@ -1,14 +1,17 @@
-package com.oldratlee.io.demo1;
+package com.oldratlee.io.demo;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 
-import com.oldratlee.io.api.Output;
-import com.oldratlee.io.api.Receiver;
-import com.oldratlee.io.api.Sender;
+import com.oldratlee.io.core.Output;
+import com.oldratlee.io.core.Receiver;
+import com.oldratlee.io.core.Sender;
 
+/**
+ * @author oldratlee
+ */
 public class Outputs {
     static class TextOutput implements Output<String, IOException> {
         final File destination;

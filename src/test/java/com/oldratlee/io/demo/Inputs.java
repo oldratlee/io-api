@@ -1,4 +1,4 @@
-package com.oldratlee.io.demo1;
+package com.oldratlee.io.demo;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,11 +6,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import com.oldratlee.io.api.Input;
-import com.oldratlee.io.api.Output;
-import com.oldratlee.io.api.Receiver;
-import com.oldratlee.io.api.Sender;
+import com.oldratlee.io.core.Input;
+import com.oldratlee.io.core.Output;
+import com.oldratlee.io.core.Receiver;
+import com.oldratlee.io.core.Sender;
 
+/**
+ * @author oldratlee
+ */
 public class Inputs {
     
     static class TextInput implements Input<String, IOException> {
@@ -48,7 +51,7 @@ public class Inputs {
                 throws ReceiverThrowableType, IOException {
             String readLine;
             while((readLine = reader.readLine()) != null) {
-                receiver.receive(readLine);
+                receiver.receive(readLine + "\n");
             }
         }
     }
