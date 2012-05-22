@@ -8,6 +8,8 @@ import com.oldratlee.io.core.Input;
 import com.oldratlee.io.core.Output;
 import com.oldratlee.io.core.filter.Filters;
 import com.oldratlee.io.core.filter.Function;
+import com.oldratlee.io.utils.Inputs;
+import com.oldratlee.io.utils.Outputs;
 
 /**
  * @author oldratlee

@@ -3,6 +3,9 @@ package com.oldratlee.io.demo;
 import java.io.File;
 import java.io.IOException;
 
+import com.oldratlee.io.utils.Inputs;
+import com.oldratlee.io.utils.Outputs;
+
 
 /**
  * @author oldratlee

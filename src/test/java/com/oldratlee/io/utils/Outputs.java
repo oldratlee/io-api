@@ -1,4 +1,4 @@
-package com.oldratlee.io.demo;
+package com.oldratlee.io.utils;
 
 import java.io.File;
 import java.io.FileWriter;
