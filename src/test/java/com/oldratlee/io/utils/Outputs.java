@@ -10,6 +10,8 @@ import com.oldratlee.io.core.Receiver;
 import com.oldratlee.io.core.Sender;
 
 /**
+ * Factory Utils of {@link Output}.
+ * 
  * @author oldratlee
  */
 public class Outputs {

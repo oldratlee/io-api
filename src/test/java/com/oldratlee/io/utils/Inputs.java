@@ -12,6 +12,8 @@ import com.oldratlee.io.core.Receiver;
 import com.oldratlee.io.core.Sender;
 
 /**
+ * Factory Utils of {@link Input}.
+ * 
  * @author oldratlee
  */
 public class Inputs {
