@@ -10,9 +10,11 @@ syntax: glob
 *.pyc
 *.pyo
 *.class
+*.iml
 .project
 .classpath
 .settings
+.idea
 target
 .springBeans
 
