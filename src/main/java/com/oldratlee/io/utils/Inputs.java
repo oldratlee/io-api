@@ -41,17 +41,17 @@ public class Inputs {
     
     static class TextSender implements Sender<String, IOException> {
         final Reader reader;
-	    BufferedReader buufferReader;
+        BufferedReader bufferReader;
 
         public TextSender(Reader reader) throws FileNotFoundException {
             this.reader = reader;
-	        this.buufferReader = new BufferedReader(reader);
+            this.bufferReader = new BufferedReader(reader);
         }
 
         public <ReceiverThrowableType extends Throwable> void sendTo(Receiver<String, ReceiverThrowableType> receiver)
                 throws ReceiverThrowableType, IOException {
             String readLine;
-            while((readLine = buufferReader.readLine()) != null) {
+            while((readLine = bufferReader.readLine()) != null) {
                 receiver.receive(readLine + "\n");
             }
         }
