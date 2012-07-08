@@ -10,7 +10,7 @@ import com.oldratlee.io.core.Receiver;
 import com.oldratlee.io.core.Sender;
 
 /**
- * Factory Utils of {@link Output}.
+ * Utils of {@link Output}.
  * 
  * @author oldratlee
  */
@@ -29,7 +29,7 @@ public class Outputs {
         public <SenderThrowableType extends Throwable> void receiveFrom(Sender<String, SenderThrowableType> sender)
                 throws IOException, SenderThrowableType {
             sender.sendTo(receiver);
-            receiver.close();
+            receiver.finished();
             try {
                 writer.close();
             } catch (Exception e) {
@@ -50,7 +50,7 @@ public class Outputs {
             writer.write(item);
         }
 
-        public void close() throws IOException {
+        public void finished() throws IOException {
         }
     }
 

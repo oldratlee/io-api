@@ -1,10 +1,6 @@
 package com.oldratlee.io.utils;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 import com.oldratlee.io.core.Input;
 import com.oldratlee.io.core.Output;
@@ -12,7 +8,7 @@ import com.oldratlee.io.core.Receiver;
 import com.oldratlee.io.core.Sender;
 
 /**
- * Factory Utils of {@link Input}.
+ * Utils of {@link Input}.
  * 
  * @author oldratlee
  */
@@ -20,12 +16,13 @@ public class Inputs {
     
     static class TextInput implements Input<String, IOException> {
         final File source;
-        final BufferedReader reader;
+        final Reader reader;
         final TextSender sender; 
         
         public TextInput(File source) throws IOException {
             this.source = source;
-            reader = new BufferedReader(new FileReader(source));
+            reader = new FileReader(source);
+
             sender = new TextSender(reader);
         }
         
@@ -36,23 +33,25 @@ public class Inputs {
             try {
                 reader.close();
             } catch (Exception e) {
-                // ignore close exception :)
+                // ignore finished exception :)
             }
         }
         
     }
     
     static class TextSender implements Sender<String, IOException> {
-        final BufferedReader reader;
-        
-        public TextSender(BufferedReader reader) throws FileNotFoundException {
+        final Reader reader;
+	    BufferedReader buufferReader;
+
+        public TextSender(Reader reader) throws FileNotFoundException {
             this.reader = reader;
+	        this.buufferReader = new BufferedReader(reader);
         }
 
         public <ReceiverThrowableType extends Throwable> void sendTo(Receiver<String, ReceiverThrowableType> receiver)
                 throws ReceiverThrowableType, IOException {
             String readLine;
-            while((readLine = reader.readLine()) != null) {
+            while((readLine = buufferReader.readLine()) != null) {
                 receiver.receive(readLine + "\n");
             }
         }

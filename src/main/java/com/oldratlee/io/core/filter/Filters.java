@@ -58,6 +58,10 @@ public class Filters {
                 receiver.receive(item);
             }
         }
+
+        public void finished() throws ReceiverThrowableType {
+            receiver.finished();
+        }
     }
 
     public static <T, ReceiverThrowableType extends Throwable>
@@ -111,6 +115,10 @@ public class Filters {
         
         public void receive(From item) throws ReceiverThrowableType {
             receiver.receive(function.map(item));
+        }
+
+        public void finished() throws ReceiverThrowableType {
+            receiver.finished();
         }
     }
     
