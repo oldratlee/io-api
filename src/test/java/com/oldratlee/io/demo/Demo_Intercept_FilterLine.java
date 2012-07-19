@@ -24,11 +24,11 @@ public class Demo_Intercept_FilterLine {
         
         Specification<String> specification = new Specification<String>() {
             public boolean test(String item) {
-                if(item.startsWith("1")) return false;
+                if(item.trim().length() == 0) return false; // 过滤空行
                 return true;
             }
         };
-        
+
         input.transferTo(Filters.filter(specification, output));
     }
 }

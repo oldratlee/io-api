@@ -57,4 +57,6 @@ public class Outputs {
     public static Output<String, IOException> text(File destination) throws IOException {
         return new TextOutput(destination);
     }
+
+    private Outputs() {}
 }

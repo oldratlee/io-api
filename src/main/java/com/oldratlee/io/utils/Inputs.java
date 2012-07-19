@@ -17,17 +17,18 @@ public class Inputs {
     static class TextInput implements Input<String, IOException> {
         final File source;
         final Reader reader;
-        final TextSender sender; 
-        
+
         public TextInput(File source) throws IOException {
             this.source = source;
             reader = new FileReader(source);
 
-            sender = new TextSender(reader);
+
         }
         
         public <ReceiverThrowableType extends Throwable> void transferTo(Output<String, ReceiverThrowableType> output)
                 throws IOException, ReceiverThrowableType {
+	        final TextSender sender = new TextSender(reader);
+
             output.receiveFrom(sender);
             
             try {
@@ -60,4 +61,6 @@ public class Inputs {
     public static Input<String, IOException> text(File source) throws IOException {
         return new TextInput(source);
     }
+
+    private Inputs() {}
 }

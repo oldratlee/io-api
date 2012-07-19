@@ -2,8 +2,6 @@ package com.oldratlee.io.core;
 
 /**
  * Input.
- * 
- * @author oldratlee
  *
  * @param <T> data type
  * @param <SenderThrowableType> Exception when send data

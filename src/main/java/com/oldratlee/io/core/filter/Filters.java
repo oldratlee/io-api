@@ -126,4 +126,6 @@ public class Filters {
     Output<From, ReceiverThrowableType> filter(Function<From, To> function, final Output<To, ReceiverThrowableType> output) {
         return new FunctionOutputWrapper<From, To, ReceiverThrowableType>(output, function);
      }
+
+    private Filters() {}
 }

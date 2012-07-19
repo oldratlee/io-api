@@ -2,8 +2,6 @@ package com.oldratlee.io.core;
 
 /**
  * Output.
- * 
- * @author oldratlee
  *
  * @param <T> data type 
  * @param <ReceiverThrowableType> Exception when receive data
