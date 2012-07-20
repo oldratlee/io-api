@@ -27,14 +27,13 @@ public class Inputs {
         
         public <ReceiverThrowableType extends Throwable> void transferTo(Output<String, ReceiverThrowableType> output)
                 throws IOException, ReceiverThrowableType {
-	        final TextSender sender = new TextSender(reader);
-
+            final TextSender sender = new TextSender(reader);
             output.receiveFrom(sender);
             
             try {
                 reader.close();
             } catch (Exception e) {
-                // ignore finished exception :)
+                // ignore close exception :)
             }
         }
         

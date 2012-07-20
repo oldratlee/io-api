@@ -18,22 +18,23 @@ public class Outputs {
     static class TextOutput implements Output<String, IOException> {
         final File destination;
         final Writer writer;
-        final TextFileReceiver receiver;
 
         public TextOutput(File destination) throws IOException {
             this.destination = destination;
             writer = new FileWriter(destination);
-            receiver = new TextFileReceiver(writer);
+
         }
 
         public <SenderThrowableType extends Throwable> void receiveFrom(Sender<String, SenderThrowableType> sender)
                 throws IOException, SenderThrowableType {
+            final TextFileReceiver receiver = new TextFileReceiver(writer);
             sender.sendTo(receiver);
             receiver.finished();
+
             try {
                 writer.close();
             } catch (Exception e) {
-                // ignore writer exception!
+                // ignore close exception
             }
         }
     }
