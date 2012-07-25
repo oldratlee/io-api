@@ -21,8 +21,6 @@ public class Inputs {
         public TextInput(File source) throws IOException {
             this.source = source;
             reader = new FileReader(source);
-
-
         }
         
         public <ReceiverThrowableType extends Throwable> void transferTo(Output<String, ReceiverThrowableType> output)

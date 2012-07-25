@@ -22,7 +22,6 @@ public class Outputs {
         public TextOutput(File destination) throws IOException {
             this.destination = destination;
             writer = new FileWriter(destination);
-
         }
 
         public <SenderThrowableType extends Throwable> void receiveFrom(Sender<String, SenderThrowableType> sender)
