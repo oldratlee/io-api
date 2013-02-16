@@ -1,29 +1,31 @@
-# maven ignore
+# maven build directory
 target/
-*.jar
-*.war
-*.zip
-*.tar
-*.tar.gz
 
-# eclipse ignore
+# Eclipse project files
 .settings/
 .project
 .classpath
 
-# idea ignore
+# IntelliJ IDEA project files
 .idea/
 *.ipr
 *.iml
 *.iws
 
-# temp ignore
+# temporary files
 *.log
+*.log.*
+
 *.cache
 *.diff
 *.patch
-*.tmp
 
-# system ignore
+*.tmp
+*.bak
+*.bkp
+*.swp
+~$*
+
+# os temporary files
 .DS_Store
 Thumbs.db

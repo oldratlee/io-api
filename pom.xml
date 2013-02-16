@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 	<name>io-api-demo</name>
 	<description>io-api-demo</description>
-	<url>https://bitbucket.org/oldrat/io-api</url>
+	<url>https://github.com/oldratlee/io-api</url>
 	<inceptionYear>2012</inceptionYear>
 	<licenses>
 		<license>
@@ -76,8 +76,8 @@
 		</dependency>
 	</dependencies>
 	<scm>
-		<url>https://bitbucket.org/oldrat/io-api</url>
-		<connection>scm:hg:https://oldrat@bitbucket.org/oldrat/io-api</connection>
+		<url>https://github.com/oldratlee/io-api</url>
+		<connection>scm:git:git@github.com:oldratlee/io-api.git</connection>
 	</scm>
 	<build>
 		<plugins>
