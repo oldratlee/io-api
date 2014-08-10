@@ -1,7 +1,10 @@
-the demo implemention of the generic io api supplied in blog <http://www.jroller.com/rickard/entry/a_generic_input_output_api>.
+IO-API
+===================
+
+The demo implementation of the generic io api supplied in blog <http://www.jroller.com/rickard/entry/a_generic_input_output_api>.
 
 Package Function
-========================
+-------------------
 
 ```java
 package com.oldratlee.io.core
@@ -15,9 +18,7 @@ package com.oldratlee.io.demo
 ```
 
 More Info
-======================
+-------------------
 
 - Documents: <https://github.com/oldratlee/io-api/wiki>
 - Question or Issue: <https://github.com/oldratlee/io-api/issues>
-
-
