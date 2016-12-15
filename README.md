@@ -1,7 +1,7 @@
 IO API设计
 ===================
 
-博文[A generic input/output API in Java](http://www.jroller.com/rickard/entry/a_generic_input_output_api)（[【译】Java的通用I/O API](https://github.com/quickhack/translations/tree/master/generic-io-api-in-java-and-api-design)）中提供通用IO API的Demo实现。
+博文[A generic input/output API in Java](http://www.jroller.com/rickard/entry/a_generic_input_output_api)（[【译】Java的通用I/O API](https://github.com/oldratlee/translations/blob/master/generic-io-api-in-java-and-api-design/README.md)）中提供通用IO API的Demo实现。
 
 包的功能
 -------------------
