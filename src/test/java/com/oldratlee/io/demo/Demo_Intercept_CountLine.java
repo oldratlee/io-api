@@ -16,8 +16,8 @@ import com.oldratlee.io.utils.Outputs;
  */
 public class Demo_Intercept_CountLine {
     public static void main(String[] args) throws IOException {
-        File source = new File("in");
-        File destination = new File("out");
+        File source = new File("in.txt");
+        File destination = new File("out.tmp");
         final AtomicInteger count = new AtomicInteger();
 
         Input<String, IOException> input = Inputs.text(source);

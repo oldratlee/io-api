@@ -1,3 +1,5 @@
+*.tmp
+
 # maven build directory
 target/
 

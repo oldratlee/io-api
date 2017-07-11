@@ -12,8 +12,8 @@ import com.oldratlee.io.utils.Outputs;
  */
 public class Demo_FileTransport {
     public static void main(String[] args) throws IOException {
-        File source = new File("in");
-        File destination = new File("out");
+        File source = new File("in.txt");
+        File destination = new File("out.tmp");
         
         Inputs.text(source).transferTo(Outputs.text(destination));
     }

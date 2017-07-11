@@ -15,8 +15,8 @@ import com.oldratlee.io.utils.Outputs;
  */
 public class Demo_Intercept_FilterLine {
     public static void main(String[] args) throws IOException {
-        File source = new File("in");
-        File destination = new File("out");
+        File source = new File("in.txt");
+        File destination = new File("out.tmp");
 
         Input<String, IOException> input = Inputs.text(source);
         
