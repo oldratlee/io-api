@@ -82,7 +82,6 @@ package com.oldratlee.io.demo
 
 - The Little Manual of API Design 【[本地下载](docs/The-Little-Manual-of-API-Design.pdf)】  
     <http://chaos.troll.no/~shausman/api-design/api-design.pdf>
-- [Practical API Design: Confessions of a Java Framework Architect](http://www.amazon.com/Practical-API-Design-Confessions-Framework/dp/1430243171)  
-    中文版：[《软件框架设计的艺术》](http://book.douban.com/subject/6003832/)
-- [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries (2nd Edition)](http://www.amazon.com/Framework-Design-Guidelines-Conventions-Libraries/dp/0321545613)  
-    中文版：[.NET设计规范](http://book.douban.com/subject/4805165/)
+- [《软件框架设计的艺术》](http://book.douban.com/subject/6003832/) | 英文原版[Practical API Design: Confessions of a Java Framework Architect](http://www.amazon.com/Practical-API-Design-Confessions-Framework/dp/1430243171)  
+- [Contributing to Eclipse中文版](https://book.douban.com/subject/1219945/) | 英文原版[Contributing to Eclipse : Principles, Patterns, and Plug-Ins](https://book.douban.com/subject/1610318/)
+- [.NET设计规范 : NET约定、惯用法与模式](http://book.douban.com/subject/4805165/) | 英文原版[Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries (2nd Edition)](http://www.amazon.com/Framework-Design-Guidelines-Conventions-Libraries/dp/0321545613)  
