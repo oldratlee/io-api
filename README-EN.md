@@ -16,7 +16,7 @@ IO API Design
 
 ------------------------------
 
-The demo implementation of the generic io api supplied in blog [A generic input/output API in Java](http://www.jroller.com/rickard/entry/a_generic_input_output_api).
+The demo implementation of the generic io api supplied in blog [A generic input/output API in Java](https://dzone.com/articles/generic-inputoutput-api-java) (PS: [Original blog link]((http://www.jroller.com/rickard/entry/a_generic_input_output_api) is broken...)
 
 Function of Package
 -------------------

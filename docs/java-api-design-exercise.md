@@ -3,12 +3,11 @@ _转自 个人博客[通用Java I/O API设计练习总结](http://oldratlee.com/
 通用Java I/O API设计练习总结
 ===============================
 
-博文[A generic input/output API in Java](http://www.jroller.com/rickard/entry/a_generic_input_output_api)(by Rickard Öberg)中给出了一个通用Java IO API设计，并且有API的Demo代码。  
-\# 译文： [Java的通用I/O API|generic-io-api-in-java-and-api-design](https://github.com/quickhack/translations/tree/master/generic-io-api-in-java-and-api-design)。
+[Java的通用I/O API](https://github.com/oldratlee/translations/tree/master/generic-io-api-in-java-and-api-design)（by _Rickard Öberg_）中给出了一个通用Java IO API设计，并且有API的Demo代码。
 
 博文中只给出设计的发展思路、关键接口、典型的使用方式。没有实现细节，看起来可能比较费力。（细致的分解后的设计往往比较抽象，不容易快速理解。）
 
-做为练习，实现这个API。示例放在了<https://github.com/oldratlee/io-api>【[代码zip包](https://github.com/oldratlee/io-api/archive/master.zip)】，可以下载后在IDE中查看 :)
+做为练习，实现这个API。本工程即是实现示例 :)
 
 这里给出我的实现和说明，节省你一些理解的时间。   
 \# 我在组内分享时的PPT：[API设计实例分析](ApiDesignSampleStudy.pptx)
