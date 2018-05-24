@@ -1,6 +1,8 @@
 IO API Design
 ===================
 
+<img src="docs/input-output.jpg" align="right" />
+
 :book: English Documentation | [:book: 中文文档](README.md)
 
 ------------------------------
@@ -21,16 +23,14 @@ The demo implementation of the generic io api supplied in blog [A generic input/
 Function of Package
 -------------------
 
-```java
-package com.oldratlee.io.core
-	core interface
-package com.oldratlee.io.core.filter
-	filter function
-package com.oldratlee.io.utils
-	utils classes
-package com.oldratlee.io.demo
-	demo class
-```
+- package `com.oldratlee.io.core`  
+    core interfaces
+- package `com.oldratlee.io.core.filter`  
+    implementation class of `Filter`
+- package `com.oldratlee.io.utils`  
+    utils classes
+- package `com.oldratlee.io.demo`  
+    `Main` classes of Demo sample
 
 More Info
 -------------------

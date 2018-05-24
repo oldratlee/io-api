@@ -4,6 +4,8 @@
 
 ------------------------------
 
+<img src="docs/input-output.jpg" align="right" />
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -31,7 +33,7 @@
 - 关键接口
 - 典型的使用方式
 
-没有给出实现细节和可运行的实现，看起来可能比较费力。（细致的分解后的设计往往比较抽象而不容易快速理解）
+没有给出实现细节和可运行的实现，看起来可能比较费力，因为设计细致分解后抽象度高而不容易理解。
 
 为了大家和自己更深入有效地学习，需要：  
 
@@ -44,7 +46,7 @@
 > PS：
 >
 > 上面2件事其实是份自学的家庭作业哦～ :laughing:  
-> 在阿里中间件团队的时候（2011年），[@_ShawnQianx_ 大大](http://weibo.com/shawnqianx)看到这篇文章时，给组里的人布置家庭作业～ :bowtie:
+> 在阿里中间件团队的时候（2011年），[@_ShawnQianx_ 大大](http://weibo.com/shawnqianx)看到这篇文章时，给组员布置的家庭作业～ :bowtie:
 >
 > @_ShawnQianx_ 对这篇文章及作者的评论：
 >
@@ -52,16 +54,14 @@
 
 ## 包的功能
 
-```java
-package com.oldratlee.io.core
-	核心接口
-package com.oldratlee.io.core.filter
-	filter功能
-package com.oldratlee.io.utils
-	工具类
-package com.oldratlee.io.demo
-	demo类
-```
+- 包`com.oldratlee.io.core`  
+    核心接口
+- 包`com.oldratlee.io.core.filter`  
+    实现的`Filter`功能的类
+- 包`com.oldratlee.io.utils`  
+    工具类
+- 包`com.oldratlee.io.demo`  
+    Demo示例的`Main`类
 
 ## 更多信息
 
