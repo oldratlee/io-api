@@ -7,6 +7,7 @@ package com.oldratlee.io.core.filter;
  *
  * @param <T> data type
  */
+@FunctionalInterface
 public interface Specification<T> {
     boolean test(T item);
 }

@@ -6,7 +6,7 @@ _转自 个人博客[通用Java I/O API设计练习总结](http://oldratlee.com/
 [Java的通用I/O API](https://github.com/oldratlee/translations/tree/master/generic-io-api-in-java-and-api-design)（by _Rickard Öberg_）中给出了一个通用Java IO API设计，并且有API的Demo代码。
 
 博文中只给出设计的发展思路、关键接口、典型的使用方式。没有实现细节，看起来可能比较费力。  
-\# 细致的分解后的设计往往比较抽象，不容易快速理解。
+\# 细致分解后的设计往往比较抽象，不容易快速理解。
 
 做为练习，实现这个API。本工程即是实现示例 :)
 

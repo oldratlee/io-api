@@ -22,7 +22,6 @@ target/
 *.diff
 *.patch
 
-*.tmp
 *.bak
 *.bkp
 *.swp

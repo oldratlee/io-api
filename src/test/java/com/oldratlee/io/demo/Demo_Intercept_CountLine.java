@@ -24,11 +24,9 @@ public class Demo_Intercept_CountLine {
         
         Output<String, IOException> output = Outputs.text(destination);
         
-        Function<String, String> function = new Function<String, String>() {
-            public String map(String from) {
-                count.incrementAndGet();
-                return from;
-            }
+        Function<String, String> function = from -> {
+            count.incrementAndGet();
+            return from;
         };
         
         input.transferTo(Filters.filter(function, output));

@@ -14,8 +14,8 @@ import java.io.IOException;
  */
 public class Demo_PersonToFileTransport {
     static class Person {
-        private String name;
-        private int age;
+        private final String name;
+        private final int age;
 
         Person(String name, int age) {
             this.name = name;
@@ -24,12 +24,13 @@ public class Demo_PersonToFileTransport {
     }
 
     static class PersonTextInput implements Input<String, IOException> {
-        Person person;
+        private final Person person;
 
         PersonTextInput(Person person) {
             this.person = person;
         }
 
+        @Override
         public <ReceiverThrowableType extends Throwable> void transferTo(Output<String, ReceiverThrowableType> output)
                 throws IOException, ReceiverThrowableType {
             final PersonTextSender sender = new PersonTextSender(person);
@@ -41,14 +42,15 @@ public class Demo_PersonToFileTransport {
     static class PersonTextSender implements Sender<String, IOException> {
         private static final String LINE_SEPARATOR = System.getProperty("line.separator");
 
-        private Person person;
+        private final Person person;
 
         PersonTextSender(Person person) {
             this.person = person;
         }
 
-        public <ReceiverThrowableType extends Throwable> void sendTo(Receiver<String, ReceiverThrowableType> receiver)
-                throws ReceiverThrowableType, IOException {
+        @Override
+        public <ReceiverThrowableType extends Throwable> void sendTo(Receiver<? super String, ReceiverThrowableType> receiver)
+                throws ReceiverThrowableType {
             receiver.receive("name: " + person.name + LINE_SEPARATOR);
             receiver.receive("age: " + person.age + LINE_SEPARATOR);
         }
