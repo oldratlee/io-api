@@ -18,11 +18,11 @@ _转自 个人博客[通用Java I/O API设计练习总结](http://oldratlee.com/
 
 ### 关键接口的依赖关系图
 
-![依赖关系]( interface-dependency.jpg )
+![依赖关系](https://user-images.githubusercontent.com/1063891/234199458-9e976bc1-10b6-464a-9c87-50ac1488de7f.jpg)
 
 ### 接口的调用序列图
 
-![调用序列](invocation-sequence.jpg)
+![调用序列](https://user-images.githubusercontent.com/1063891/234199658-64b2189c-ea78-43d6-8692-37a25d2f1153.jpg)
 
 图中一些约定：
 
