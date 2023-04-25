@@ -11,5 +11,5 @@ public interface Sender<T, SenderThrowableType extends Throwable> {
      */
     <ReceiverThrowableType extends Throwable>
     void sendTo(Receiver<? super T, ReceiverThrowableType> receiver)
-        throws ReceiverThrowableType, SenderThrowableType;
+            throws ReceiverThrowableType, SenderThrowableType;
 }

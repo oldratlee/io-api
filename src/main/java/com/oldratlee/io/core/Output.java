@@ -3,7 +3,7 @@ package com.oldratlee.io.core;
 /**
  * Output.
  *
- * @param <T> data type 
+ * @param <T>                     data type
  * @param <ReceiverThrowableType> Exception when receive data
  */
 @FunctionalInterface

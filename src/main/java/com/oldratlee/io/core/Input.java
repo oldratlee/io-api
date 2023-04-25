@@ -3,7 +3,7 @@ package com.oldratlee.io.core;
 /**
  * Input.
  *
- * @param <T> data type
+ * @param <T>                   data type
  * @param <SenderThrowableType> Exception when send data
  */
 @FunctionalInterface

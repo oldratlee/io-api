@@ -1,17 +1,17 @@
 package com.oldratlee.io.utils;
 
+import com.oldratlee.io.core.Output;
+import com.oldratlee.io.core.Receiver;
+import com.oldratlee.io.core.Sender;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 
-import com.oldratlee.io.core.Output;
-import com.oldratlee.io.core.Receiver;
-import com.oldratlee.io.core.Sender;
-
 /**
  * Utils of {@link Output}.
- * 
+ *
  * @author oldratlee
  */
 public class Outputs {
@@ -59,5 +59,6 @@ public class Outputs {
         return new TextOutput(destination);
     }
 
-    private Outputs() {}
+    private Outputs() {
+    }
 }
