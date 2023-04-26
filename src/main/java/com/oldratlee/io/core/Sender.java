@@ -10,6 +10,5 @@ public interface Sender<T, SenderThrowableType extends Throwable> {
      * @param <ReceiverThrowableType> Exception when receive data
      */
     <ReceiverThrowableType extends Throwable>
-    void sendTo(Receiver<? super T, ReceiverThrowableType> receiver)
-            throws ReceiverThrowableType, SenderThrowableType;
+    void sendTo(Receiver<? super T, ReceiverThrowableType> receiver) throws ReceiverThrowableType, SenderThrowableType;
 }
