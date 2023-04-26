@@ -22,8 +22,8 @@ public class Inputs {
         }
 
         @Override
-        public <ReceiverThrowableType extends Throwable> void transferTo(Output<String, ReceiverThrowableType> output)
-                throws IOException, ReceiverThrowableType {
+        public <ReceiverThrowableType extends Throwable>
+        void transferTo(Output<String, ReceiverThrowableType> output) throws IOException, ReceiverThrowableType {
             final TextSender sender = new TextSender(reader);
             output.receiveFrom(sender);
 
@@ -44,7 +44,8 @@ public class Inputs {
         }
 
         @Override
-        public <ReceiverThrowableType extends Throwable> void sendTo(Receiver<? super String, ReceiverThrowableType> receiver)
+        public <ReceiverThrowableType extends Throwable>
+        void sendTo(Receiver<? super String, ReceiverThrowableType> receiver)
                 throws ReceiverThrowableType, IOException {
             String readLine;
             while ((readLine = bufferReader.readLine()) != null) {
