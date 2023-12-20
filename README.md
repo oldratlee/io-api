@@ -5,8 +5,8 @@
 <a href="https://app.codecov.io/gh/oldratlee/io-api/tree/main"><img src="https://img.shields.io/codecov/c/github/oldratlee/io-api/main?logo=codecov&logoColor=white" alt="Codecov"></a>
 <a href="https://openjdk.java.net/"><img src="https://img.shields.io/badge/Java-8+-339933?logo=openjdk&logoColor=white" alt="Java support"></a>
 <a href="https://www.apache.org/licenses/LICENSE-2.0.html"><img src="https://img.shields.io/github/license/oldratlee/io-api?color=4D7A97&logo=apache" alt="License"></a>
-<a href="https://github.com/oldratlee/io-api/stargazers"><img src="https://img.shields.io/github/stars/oldratlee/io-api" alt="GitHub Stars"></a>
-<a href="https://github.com/oldratlee/io-api/fork"><img src="https://img.shields.io/github/forks/oldratlee/io-api" alt="GitHub Forks"></a>
+<a href="https://github.com/oldratlee/io-api/stargazers"><img src="https://img.shields.io/github/stars/oldratlee/io-api?style=flat" alt="GitHub Stars"></a>
+<a href="https://github.com/oldratlee/io-api/fork"><img src="https://img.shields.io/github/forks/oldratlee/io-api?style=flat" alt="GitHub Forks"></a>
 <a href="https://github.com/oldratlee/io-api/issues"><img src="https://img.shields.io/github/issues/oldratlee/io-api" alt="GitHub Issues"></a>
 <a href="https://github.com/oldratlee/io-api"><img src="https://img.shields.io/github/repo-size/oldratlee/io-api" alt="GitHub repo size"></a>
 <a href="https://gitpod.io/#https://github.com/oldratlee/io-api"><img src="https://img.shields.io/badge/Gitpod-ready to code-339933?label=gitpod&logo=gitpod&logoColor=white" alt="gitpod: Ready to Code"></a>
