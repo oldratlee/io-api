@@ -1,6 +1,5 @@
 # 📐 IO API Design
 
-
 <p align="center">
 <a href="https://github.com/oldratlee/io-api/actions/workflows/ci.yaml"><img src="https://img.shields.io/github/actions/workflow/status/oldratlee/io-api/ci.yaml?branch=main&logo=github&logoColor=white" alt="Github Workflow Build Status"></a>
 <a href="https://app.codecov.io/gh/oldratlee/io-api/tree/main"><img src="https://img.shields.io/codecov/c/github/oldratlee/io-api/main?logo=codecov&logoColor=white" alt="Codecov"></a>
@@ -15,22 +14,9 @@
 
 :book: English Documentation | [:book: 中文文档](README.md)
 
-<a href="#dummy"><img src="https://user-images.githubusercontent.com/1063891/234197656-c664c069-01db-4883-9031-9800644ec9ac.jpg" align="right" /></a>
+<a href="#dummy"><img src="https://user-images.githubusercontent.com/1063891/234197656-c664c069-01db-4883-9031-9800644ec9ac.jpg" width="25%" align="right" /></a>
 
-------------------------------
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-
-- [Function of Package](#function-of-package)
-- [More Info](#more-info)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-------------------------------
-
-The demo implementation of the generic io api supplied in blog [A generic input/output API in Java](https://dzone.com/articles/generic-inputoutput-api-java) (PS: [Original blog link]((http://www.jroller.com/rickard/entry/a_generic_input_output_api) is broken...)
+The demo implementation of the generic io api supplied in blog [A generic input/output API in Java](https://web.archive.org/web/20130216100207/http://www.jroller.com/rickard/entry/a_generic_input_output_api) (PS: [Original blog link]((http://www.jroller.com/rickard/entry/a_generic_input_output_api) is broken...)
 
 Function of Package
 -------------------
@@ -43,8 +29,3 @@ Function of Package
     utils classes
 - package `com.oldratlee.io.demo`  
     `Main` classes of Demo sample
-
-More Info
--------------------
-
-- Question or Issue: https://github.com/oldratlee/io-api/issues
