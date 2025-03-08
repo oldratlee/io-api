@@ -32,7 +32,9 @@
 
 ------------------------------
 
-[Java的通用I/O API](https://github.com/oldratlee/translations/blob/master/generic-io-api-in-java-and-api-design/README.md)（by _Rickard Öberg_）中给出了一个通用`Java` `IO API`设计，并且有`API`的`Demo`代码。更重要的是给出了这个`API`设计本身的步骤和过程，这让`API`设计有些条理。文中示范了从 普通简单实现 整理成 正交分解、可复用、可扩展、高性能、无错误的`API`设计 的过程，这个过程是很值得理解和学习！
+[Java的通用I/O API](https://github.com/oldratlee/translations/blob/master/generic-io-api-in-java-and-api-design/README.md)（by _Rickard Öberg_）中给出了一个通用`Java` `IO API`设计，并且有`API`的`Demo`代码。
+
+更重要的是给出了这个`API`设计本身的步骤和过程，这让`API`设计有些条理。文中示范了从 普通简单实现 整理成 正交分解、可复用、可扩展、高性能和错误保真的`API`设计 的过程，这个过程是很值得理解和学习！
 
 设计偏向是艺术，一个赏心悦目的设计，尤其是`API`设计，旁人看来多是妙手偶得的感觉，如果能有些章可循真是一件美事。
 

@@ -30,7 +30,7 @@
 
 ------------------------------
 
-The demo implementation of the generic io api supplied in blog [A generic input/output API in Java](https://dzone.com/articles/generic-inputoutput-api-java) (PS: [Original blog link]((http://www.jroller.com/rickard/entry/a_generic_input_output_api) is broken...)
+The demo implementation of the generic io api supplied in blog [A generic input/output API in Java](https://web.archive.org/web/20130216100207/http://www.jroller.com/rickard/entry/a_generic_input_output_api) (PS: [Original blog link]((http://www.jroller.com/rickard/entry/a_generic_input_output_api) is broken...)
 
 Function of Package
 -------------------
