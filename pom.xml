@@ -50,7 +50,7 @@
 		<jetbrains.annotations.version>26.0.2-1</jetbrains.annotations.version>
 
 		<!-- testing dependencies versions -->
-		<junit5.version>5.13.4</junit5.version>
+		<junit5.version>5.14.0</junit5.version>
 	</properties>
 
 	<dependencies>
