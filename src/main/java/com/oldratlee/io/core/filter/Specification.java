@@ -1,5 +1,7 @@
 package com.oldratlee.io.core.filter;
 
+import java.util.function.Predicate;
+
 /**
  * Check data.
  *
@@ -7,6 +9,7 @@ package com.oldratlee.io.core.filter;
  * @author oldratlee
  */
 @FunctionalInterface
-public interface Specification<T> {
+public interface Specification<T> extends Predicate<T> {
+    @Override
     boolean test(T item);
 }
