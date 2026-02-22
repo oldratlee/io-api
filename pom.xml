@@ -47,7 +47,7 @@
 
 		<spotbugs.annotations.version>4.9.8</spotbugs.annotations.version>
 		<jsr305.version>3.0.2</jsr305.version>
-		<jetbrains.annotations.version>26.0.2-1</jetbrains.annotations.version>
+		<jetbrains.annotations.version>26.1.0</jetbrains.annotations.version>
 
 		<!-- testing dependencies versions -->
 		<junit5.version>5.14.3</junit5.version>
